@@ -12,5 +12,5 @@ _start:
   syscall          ; this instruction makes a call system
 
   mov rax, 60      ; syscall number 'exit'
-  xor rdi, rdi
+  xor rdi, rdi     ; change the rdi value from 1 to 0
   syscall
